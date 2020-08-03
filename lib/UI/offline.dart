@@ -74,7 +74,7 @@ myApp() {
       children: <Widget>[
         Container(
           width: double.infinity,
-          height: 550,
+          height: 490,
           decoration: BoxDecoration(
             border: Border.all(
               width: 3,
@@ -84,22 +84,18 @@ myApp() {
           child: offlinevideos(), //TODO offlineVideo Function
         ),
         Container(
-          margin: EdgeInsets.only(top: 550),
+          margin: EdgeInsets.only(top: 490),
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.grey[400],
-            image: DecorationImage(
-              image: AssetImage('image/images-2.png'),
-              fit: BoxFit.fill,
-            ),
+            color: Colors.white,
             borderRadius: BorderRadius.circular(0),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                'AUDIO SONGS',
+                'AUDIO',
                 style: TextStyle(
                   fontStyle: FontStyle.italic,
                   fontSize: 21,
@@ -107,7 +103,6 @@ myApp() {
                   height: -1,
                   decoration: TextDecoration.underline,
                   decorationStyle: TextDecorationStyle.dashed,
-                  backgroundColor: Colors.amber[300],
                 ),
               ),
               Row(
